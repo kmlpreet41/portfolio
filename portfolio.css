@@ -1,0 +1,564 @@
+
+html{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+}
+
+
+body{
+    background-color: #0000;
+    color: white;
+    margin:0 auto;
+    padding: 0;
+    height: 100vh;
+    overflow: scroll;
+    background-color: black;
+    /* animation-name: backgroundZoom;
+    transition: 2s ease-in forwards; */
+   
+    
+}
+
+header{
+    position: relative;
+    height: 4rem;
+    width: 100%;
+    padding: 10px 10% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -10px;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    
+    
+}
+
+
+
+.logo{
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    margin-right: -5rem;
+    margin-left: -5rem; 
+
+}
+.logo span{
+       color:red
+}
+.logo:hover{
+    transform:scale(1.1)
+}
+
+nav a{
+    font-size: 1.5rem ;
+    color:white;
+    transition: .5s ease; 
+}
+nav a:hover,
+nav a.active{
+    color: red;
+    
+}
+header button{
+    justify-content: center;
+    color: white;
+    background-color: #ff4500;
+    color: #ffffff;
+    border-radius: 20px;
+    width: 150px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    transition: 5s ease;
+    transform:scale(1.1)
+
+}
+/* 
+@media screen and (max-width: 992px) {
+    .heros-section img {
+        margin-left: 60px;
+        max-width: 100%;
+    } */
+
+.heros-section img{
+        position: relative;
+        cursor: pointer;
+        height: 500px;
+        width: 500px;
+        border-radius: 40%;
+        box-shadow: -10px 10px 90px #ff4500;
+        border: 3px solid #ff4500;  
+        margin-left: 55%;
+        margin-top: -35%;
+        
+}
+img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+.heros-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 5.5rem;
+}
+.heros-text span{
+      color: #ff4500
+   
+}
+.heros-section h2{
+    color: #ff4500;
+}
+.heros-section button{
+    background-color: #ff4500;
+    color: #ffffff;
+    border-radius: 20px;
+    width: 150px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    transition: 5s ease;
+    transform:scale(1.1)
+}
+.heros-section p{
+    font-size: 20px;
+    width: 70%;
+}
+.social-icon a{
+    height: 10px ;
+    width: 25px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff4500;
+    border-radius: 50%;
+    padding: 10px 2px 10px 2px;
+    text-align: center;
+    margin-left: 10px;
+    /* animation: fadeIn 2s ease-out forwards;
+    opacity: 0;
+    animation-delay: 1s; */
+}
+@keyframes fadeIn{
+    from{
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes fadeInTop{
+        from{
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        to{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    
+}
+@keyframes sideInRight{
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+@keyframes backgroundZoom{
+    from{
+        background-size: 80%;
+    }
+    to{
+        background-size: 100%;
+    }
+}
+
+/* h4{
+     animation: fadeIn 1.0s ease-out forwards;
+     opacity:0;
+} */
+
+.heros-section h4{
+    animation:  fadeIn 1.0s ease-out forwards;
+    opacity: 0;
+
+}
+h1{
+   animation: fadeIn 1.2s ease-out forwards;
+   opacity: 0;
+   animation-delay: 0.2s;
+
+}
+h2{
+    animation: fadeIn 1.4s ease-out forwards;
+    opacity: 0;
+   animation-delay:0.4s;
+
+
+}
+p{
+    animation: fadeIn 1.6s ease-out forwards;
+    opacity: 0;
+    animation-delay: 0.6s;
+
+  
+}
+.heros-section button{
+      animation: fadeIn 1.8s ease-out forwards;
+      opacity: 0;
+      animation-delay: 0.8s;
+
+   
+}
+.social-icon{
+    animation: fadeIn 2s ease-out forwards;
+      opacity: 0;
+      animation-delay: 1s;
+
+
+}
+.hire{
+    animation: fadeIn 0.6s ease-out forwards;
+    opacity: 0;
+    animation-delay: 1s;
+
+ 
+}
+/* .img{
+    animation: fadeIn 0.8s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0.2s;
+} */
+header nav a,
+.logo,
+header button{
+    animation: fadeInTop 1s ease-in forwards;
+    opacity: 0;
+}
+.heros-image{
+    animation: sideInRight 2s ease-in forwards;
+    opacity: 0;
+    animation-delay: 0.1s;
+}
+body{
+    animation: backgroundZoom 3s ease-in forwards;
+}
+
+
+
+
+
+.about-me{
+    justify-content: center;
+    text-align: center;
+    font-size: 60px;
+    font: 50px poppins;
+    background-color: #0d0d0d;
+    padding-bottom: 20px;
+    padding-top: 1.5rem;
+}
+.about-me span{
+    color: #ff4500;
+}
+@keyframes zoomIn {
+         from{
+            transform: scale(0);
+         }
+         to{
+            transform: scale(1);
+            opacity: 1;
+         }
+   }
+.img{
+    border-radius: 50%;
+    box-shadow: -10px 10px 90px #ff4500; 
+    border: 3px solid #ff4500;
+    height: 20rem;
+    width: 20rem;
+    align-items: center;
+    transition: 0.4s ease-in-out;
+    animation: 1.6s zoomIn ease-out forwards;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation: 1.6s zoomIn ease-out forwards;
+    animation-delay: .2s;
+    opacity: 0;
+}
+.full-stack{
+    text-align: center;
+}
+.index p{
+    margin: 10vh;
+    font-size: 20px;
+}
+.hire{
+   background-color: #ff4500;
+    color: #ffffff;
+    border-radius: 20px;
+    width: 220px;
+    padding: 9px 30px;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transition: 5s ease;
+    transform:scale(1.1)
+    
+}
+.skills{
+     text-align: center;
+     font-size: 40px;
+}
+.skills span{
+    color: #ff4500;
+}
+
+@keyframes zoomOut {
+         from{
+            transform: scale(0);
+         }
+         to{
+            transform: scale(1);
+            opacity: 1;
+         }
+   }
+
+
+
+
+.skills {
+  width: 600px;
+  margin: 50px auto;
+  color: #fff;
+  animation: 1.6s zoomOut ease-in forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.skill {
+  margin-bottom: 25px;
+}
+
+.skill span {
+  /* display: block; */
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.bar {
+  width: 100%;
+  height: 14px;
+  background: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #ff4d00;
+  border-radius: 10px;
+}
+
+/* Skill levels */
+.progress.html {
+  width: 95%;
+}
+
+.progress.css {
+  width: 60%;
+}
+
+.progress.js {
+  width: 88%;
+}
+
+.progress.figma {
+  width: 70%;
+}
+.icon{
+    position:absolute;
+    display: none;
+    left: 75%; 
+}
+
+
+@media screen and (max-width:992px) {
+   .logo{
+    margin-left: -80px;
+   }
+   nav a{
+    font-size: 1rem;
+   }
+   header button{
+        margin-right: 140px;
+   }
+   .heros-image{
+    width: 40%;
+    margin-left: -5px;
+   }
+   .heros-section img{
+    margin-left: 60px;
+    max-width: 100%;
+   }
+   .heros-section .heros-text{
+    margin-left: 30px;
+   }
+   .about-me h2{
+     font-size: 2.3rem;
+   }
+
+   /* @keyframes zoomIn {
+         from{
+            transform: scale(0);
+         }
+         to{
+            transform: scale(1);
+            opacity: 1;
+         }
+   } */
+   .about-me img{
+    width: 100%;
+    /* animation: 1.6s zoomIn ease-out forwards;
+    animation-delay: .2s;
+    opacity: 0; */
+   }
+   .about-me img{
+    margin-top: -22rem;
+    /* animation: 1.6s zoomIn ease-out forwards;
+    animation-delay: .2s;
+    opacity: 0; */
+   }
+   .about-me .full-stack h3{
+    margin-top: -30px;
+   }
+}
+@media screen and (max-width:768px) {
+    .icon{
+        cursor: pointer;
+        display: inline-flex;
+    }
+     header button{
+        display: none;
+    }
+     nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 17.7rem;
+        background: rgba(0,0,0,0.1);
+        backdrop-filter: blur(50px);
+    }
+    nav a.active{
+        color:#ffffff;
+        border: none;
+    }
+    nav a{
+        display: block;
+        font-size: 17px;
+        margin: 20px 50px;
+        margin-left: 20px;
+    }
+    .logo{
+        font-size: 25px;
+        padding-left: 20px;
+    }
+    .heros-section{
+        margin-left: -20px;
+        margin-top: -40px;
+    }
+    .heros-section img{
+        margin-top: 5rem;
+        max-width: 100%;
+    }
+    
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/* @keyframes fadeIn{
+    from{
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 0;
+    }
+}
+@keyframes fadeInTop{
+        from{
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        to{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    
+}
+@keyframes sideInRight{
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+@keyframes backgroundZoom{
+    from{
+        background-size: 80%;
+    }
+    to{
+        background-size: 100%;
+    }
+} */
